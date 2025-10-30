@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .Main1{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(233, 233, 233);
+        position: relative;
+    }
+    .Sub11{
+        position: absolute;
+        left: 10vw;
+        top: 15vh;
+        width: 80vw;
+        height: 70vh;
+        background-color: orangered;
+        border-radius: 50px;
+    }
+    .Sub12{
+        width: 40vw;
+        height: 30vh;
+        position: absolute;
+        left: 15vw;
+        top: 15vh;
+        font-size: xx-large;
+        color: white;
+    }
+    .Sub12 h1{
+        font-size: 100px;
+    }
+    .Sub13 img{
+        width: 500px;
+    }
+    .Sub13{
+        position: absolute;
+        right: 15vw;
+        top: 25vh;
+    }
+    .Sub14 img{
+        width: 170px;
+    }
+    .Sub14{
+        position: absolute;
+        top: 0vh;
+    }
+    .Box{
+        width: 15vw;
+        height: 25vh;
+        border: 10px double white;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+    .Box img{
+        width: 15vw;
+        height: 25vh;
+        border-radius: 20px;
+        transition: all 0.5s ease-in-out;
+    }
+    .Box img:hover{
+        transform: scale3d(1.1,1.1,1.5);
+    }
+    .Sub15{
+        position: absolute;
+        top: 50vh;
+        left: 15vw;
+    }
+    .Sub16{
+        position: absolute;
+        top: 50vh;
+        left: 35vw;
+    }
+    .Sub17{
+        position: absolute;
+        font-size: x-large;
+        right: 5vw;
+        top: 5vh;
+        color: orangered;
+        font-weight: bold;
+    }
+    .Sub17 td{
+        padding-right: 50px;
+    }
+    .Sub17 div{
+        width: 120px;
+        height: 50px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        transition: all ease-in-out 1s;
+    }
+    .Sub17 div:hover{
+        background-color: orangered;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .Main2{
+        width: 100vw;
+        height: 100vh;
+        background-color: orangered;
+        position: relative;
+    }
+    .Box1{
+        height: 30vh;
+        width: 15vw;
+        background-color: brown;
+        border: 3px solid white;
+        border-radius: 30px;
+        transition: all 0.5s ease-in-out;
+    }
+    .Box1:hover{
+        transform: scale(1.1) translateY(5vh) ;
+        z-index: 2;
+
+    }
+    .Box1:hover button{
+        display: block;
+    }
+    .Box1 img{
+        height: 30vh;
+        width: 15vw;
+        border-radius: 30px;
+    }
+    .Box1 button{
+        width: 15vw;
+        height: 5vh;
+        background-color: black;
+        color: white;
+        border: 3px solid white;
+        border-radius: 20px;
+        font-size: larger;
+        display: none;
+    }
+    .Sub21{
+        position: absolute;
+        top: 10vh;
+        left: 15vw;
+    }
+    .Sub22{
+        position: absolute;
+        top: 10vh;
+        right: 15vw;
+    }
+    .Sub23{
+        position: absolute;
+        top: 10vh;
+        left: 25vw;
+    }
+    .Sub24{
+        position: absolute;
+        top: 10vh;
+        right: 25vw;
+    }
+    .Sub25{
+        position: absolute;
+        top: 10vh;
+        left: 35vw;
+    }
+    .Sub26{
+        position: absolute;
+        top: 10vh;
+        right: 35vw;
+    }
+    .Sub27{
+        width: 20vw;
+        height: 30vh;
+         background-color: rgb(255, 0, 0);
+        border: 3px solid white;
+        border-radius: 30px;
+        position: absolute;
+        top: 10vh;
+        left: 40vw;
+    }
+    .Sub27 img{
+        width: 20vw;
+        height: 30vh;
+        border-radius: 30px;
+    }
+    .Sub28{
+        width: 20vw;
+        height: 30vh;
+         background-color: rgb(255, 0, 0);
+        border: 3px solid white;
+        border-radius: 30px;
+        position: absolute;
+        bottom: 15vh;
+        left: 40vw;
+        z-index: 1;
+    }
+    .Sub28 img{
+        width: 20vw;
+        height: 30vh;
+        border-radius: 30px;
+    }
+    .Sub29{
+        position: absolute;
+        bottom: 15vh;
+        left: 15vw;
+    }
+    .Sub210{
+        position: absolute;
+        bottom: 15vh;
+        right: 15vw;
+    }
+    .Sub211{
+        position: absolute;
+        bottom: 15vh;
+        left: 25vw;
+    }
+    .Sub212{
+        position: absolute;
+       bottom: 15vh;
+        right: 25vw;
+    }
+    .Sub213{
+        position: absolute;
+        bottom: 15vh;
+        left: 35vw;
+    }
+    .Sub214{
+        position: absolute;
+        bottom: 15vh;
+        right: 35vw;
+    }
+
+</style>
+<body>
+    <div class="Main1">
+        <div class="Sub11">
+
+        </div>
+        <div class="Sub12">
+            <h1>S W I G G Y</h1>
+            <p>Taste Meets Speed – Swiggy!</p>
+        </div>
+        <div class="Sub13">
+            <img src="https://png.pngtree.com/png-vector/20240829/ourmid/pngtree-delicious-and-testy-cheese-burger-png-image_13659847.png" alt="">
+        </div>
+        <div class="Sub14">
+            <img src="https://static.vecteezy.com/system/resources/previews/050/816/833/non_2x/swiggy-transparent-icon-free-png.png" alt="">
+        </div>
+        <div class="Sub15 Box">
+            <img src="https://images.deliveryhero.io/image/fd-pk/LH/n6ih-listing.jpg" alt="">
+        </div>
+        <div class="Sub16 Box">
+            <img src="https://images.themodernproper.com/production/posts/2022/Homemade-French-Fries_8.jpg?w=1200&h=1200&q=60&fm=jpg&fit=crop&dm=1662474181&s=15046582e76b761a200998df2dcad0fd" alt="">
+        </div>
+        <div class="Sub17">
+            <table>
+                <tr>
+                    <td><div>Home</div></td>
+                    <td><div>Order</div></td>
+                    <td><div>Location</div></td>
+                    <td><div>Login</div></td>
+                    <td><div>History</div></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="Main2">
+        <div class="Sub21 Box1">
+            <img src="https://media.istockphoto.com/id/980462262/photo/tasty-grilled-fish.jpg?s=612x612&w=0&k=20&c=e6m9uJ3mKotLv5x8lZjMqLklA8cM4bl1qJtMwdlCnq8=" alt="">
+            <button>Order Now</button>
+        </div>
+        <div class="Sub22 Box1">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/038/972/450/small_2x/ai-generated-indian-platter-thali-indian-food-set-photo.jpg" alt="">
+            <button>Order Now</button>
+        </div>
+        <div class="Sub23 Box1">
+            <img src="https://www.licious.in/blog/wp-content/uploads/2023/02/shutterstock_2205168763-750x508.jpg" alt="">
+            <button>Order Now</button>
+        </div>
+        <div class="Sub24 Box1">
+            <img src="https://cdn.tasteatlas.com//images/dishes/ceff65c140064d6285fc3814534a349b.jpg?w=375&h=280" alt="">
+            <button>Order Now</button>
+        </div>
+         <div class="Sub25 Box1">
+            <img src="https://images.pexels.com/photos/2673353/pexels-photo-2673353.jpeg?cs=srgb&dl=pexels-enginakyurt-2673353.jpg&fm=jpg" alt="">
+            <button>Order Now</button>
+        </div>
+        <div class="Sub26 Box1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJR56ZWJKuxGtMRQM5HOwTJKkiCLi2LIxzV0TQzTAbzPqa938rrs85A95R5FyeydWO7Y8&usqp=CAU" alt="">
+            <button>Order Now</button>
+        </div>
+        <div class="Sub27">
+            <img src="https://t4.ftcdn.net/jpg/06/12/03/85/360_F_612038524_JSdZDp3QCWCntBgWTFuli5XtV0JIxZza.jpg" alt="">
+        </div>
+        <div class="Sub28">
+            <img src="https://t3.ftcdn.net/jpg/03/01/97/86/360_F_301978652_O0aPwap1JaEVaAhj3mIlbqNnJGmRyCzC.jpg" alt="">
+        </div>
+        <div class="Sub29 Box1">
+            
+            <img src="https://t4.ftcdn.net/jpg/03/06/90/15/360_F_306901562_nT6sIcAx10Oqyf3tITJZA1T3YrkCarrD.jpg" alt="">
+            <button>Order Now</button>
+        </div>
+        <div class="Sub210 Box1">
+            <img src="https://i.pinimg.com/736x/07/53/a9/0753a96127562990213749b7d24eb4fd.jpg" alt="">
+            <button>Order Now</button>
+        </div>
+        <div class="Sub211 Box1">
+            <img src="https://media.istockphoto.com/id/576740204/photo/strawberry-smoothie.jpg?s=612x612&w=0&k=20&c=eqIe1_itBOqQmtV_KtPduPENbAZWsuM5Q9-qmLp0MAE=" alt="">
+            <button>Order Now</button>
+        </div>
+        <div class="Sub212 Box1">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/035/773/871/small_2x/ai-generated-berry-bliss-shake-up-summer-with-a-cold-pink-strawberry-milkshake-photo.jpg" alt="">
+            <button>Order Now</button>
+        </div>
+         <div class="Sub213 Box1">
+            <img src="https://media.istockphoto.com/id/1308045723/photo/cold-coffee-frappuccino.jpg?s=612x612&w=0&k=20&c=drB225PkXKnjRzym-06I3rQs2dawXXb2mxsdbkj9aK0=" alt="">
+            <button>Order Now</button>
+        </div>
+        <div class="Sub214 Box1">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/035/985/777/small/ai-generated-tcookie-plate-dessert-food-photo.jpg" alt="">
+            <button>Order Now</button>
+        </div>
+    </div>
+</body>
+</html>
